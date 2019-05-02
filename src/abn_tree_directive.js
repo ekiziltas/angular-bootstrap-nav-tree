@@ -228,6 +228,10 @@ module.directive('abnTree', [
               return $timeout(function() {
                 return select_branch(b);
               });
+            }else if(b.uid === attrs.initialSelection){
+              return $timeout(function() {
+                return select_branch(b);
+              });
             }
           });
         }
